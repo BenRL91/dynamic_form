@@ -1,1 +1,34 @@
 /* CSS Entry Point */
+
+@import "normalize";
+
+$buttonBlue: #0082A6;
+$darkerBlue: #0B92B6;
+$footerGray: #D1E3DF;
+
+header {
+	// position: absolute;
+	color: white;
+	padding-left: 25px;
+	background: lighten($buttonBlue, 5%);
+	border-bottom: 2px solid $darkerBlue;
+	h1 {
+		font-weight: lighter;
+		font-size: 25px;
+	}
+}
+.app {
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 535px;
+	// padding: 10px;
+	border: 2px solid #D1CAA7;
+}
+
+input, select, textarea, label {
+	margin: 0px 10px;	
+}
