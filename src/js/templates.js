@@ -3,8 +3,10 @@
 
 export function textTemplate(elem){
 	return `
-		<label for=${elem.id}>${elem.label}</label>
-		<input type=${elem.type} id=${elem.id}>
+		<div class="form_elem">
+			<label for=${elem.id}><img src=http://lorempixel.com/25/25>${elem.label}</label>
+			<input type=${elem.type} id=${elem.id}>
+		</div>
 	`;
 }
 
@@ -14,15 +16,20 @@ export function selectBoxTemplate(elem){
 });
 
 	return `
-		<select id=${elem.id}>
-			${option}
-		</select>
+		<div class="form_elem">
+			<label for=${elem.id} title="press Enter and use Arrow Keys"><img src=http://lorempixel.com/25/25>Select language...</label>
+			<select id=${elem.id}>
+				${option}
+			</select>
+		</div>
 		`;
 }
 
 export function textAreaTemplate(elem){
 	return `
-		<label for=${elem.id}>${elem.label}</label>
-		<textarea id=${elem.id}></textarea>
+		<div class="form_elem">
+			<label for=${elem.id}><img src=http://lorempixel.com/25/25>${elem.label}</label>
+			<textarea id=${elem.id}></textarea>
+		</div>
 		`;
 }

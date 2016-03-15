@@ -14,6 +14,5 @@ var templateToUse = {
 
 data.forEach(elem =>{
 	var templateInUse = templateToUse[elem.type];
-
-	console.log($app.append(templateInUse(elem)));
+	$app.append(templateInUse(elem))
 });

@@ -7,11 +7,16 @@ $darkerBlue: #0B92B6;
 $footerGray: #D1E3DF;
 
 header {
-	// position: absolute;
+	height: 67px;
 	color: white;
 	padding-left: 25px;
+	padding-top: 5px;
+	margin-bottom: 22px;
 	background: lighten($buttonBlue, 5%);
-	border-bottom: 2px solid $darkerBlue;
+	border-radius: 3px;
+	border-bottom: 4px solid $darkerBlue;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	h1 {
 		font-weight: lighter;
 		font-size: 25px;
@@ -23,12 +28,88 @@ header {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	width: 535px;
+	width: 536px;
+	height: 660px;
 	// padding: 10px;
 	border: 2px solid #D1CAA7;
+	border-radius: 5px;
 }
 
-input, select, textarea, label {
-	margin: 0px 10px;	
+input, select, textarea {
+	// margin: 0px 110px;
+	border: none;
+	width: 68%;
+	height: 30px;
+}
+select {
+	color: transparent;
+	font-size: 12px;
+	background: url(../images/arrows.png) no-repeat;
+	background-position: 100% 0px;
+	border: none;
+
+}
+
+option {
+	border: none;
+	background: white;
+}
+
+label {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	top: 3px;
+	color: #C8C8AA;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+}
+
+div {
+	position: relative;
+	border: 2px solid #C8C8AA;
+	margin: 10px 25px;
+	display: flex;
+	// width: 536px;
+
+}
+
+textarea {
+	height: 60px;
+	width: 100%;
+	padding-left: 128px;
+}
+
+footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	height: 75px;
+	background: $footerGray;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.submitBtn {
+	font-size: 12px;
+	color: white;
+	background: $buttonBlue;
+	height: 35px;
+	width: 100px;
+	padding: 0;
+	border: 2px solid $darkerBlue;
+
+}
+img {
+	margin-right: 10px;
+}
+
+.form_elem {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	// align-items: center;
 }
